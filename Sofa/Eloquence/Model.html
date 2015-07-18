@@ -1,0 +1,1766 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="robots" content="index, follow, all" />
+    <title>Sofa\Eloquence\Model | API</title>
+
+            <link rel="stylesheet" type="text/css" href="../../css/bootstrap.min.css">
+        <link rel="stylesheet" type="text/css" href="../../css/bootstrap-theme.min.css">
+        <link rel="stylesheet" type="text/css" href="../../css/sami.css">
+        <script src="../../js/jquery-1.11.1.min.js"></script>
+        <script src="../../js/bootstrap.min.js"></script>
+        <script src="../../js/typeahead.min.js"></script>
+        <script src="../../sami.js"></script>
+        <meta name="MobileOptimized" content="width">
+        <meta name="HandheldFriendly" content="true">
+        <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1">
+    
+    
+    </head>
+
+    <body id="class" data-name="class:Sofa_Eloquence_Model" data-root-path="../../">
+            <div id="content">
+        <div id="left-column">
+                <div id="control-panel">
+                <form id="search-form" action="../../search.html" method="GET">
+            <span class="glyphicon glyphicon-search"></span>
+            <input name="search"
+                   class="typeahead form-control"
+                   type="search"
+                   placeholder="Search">
+        </form>
+    </div>
+
+                <div id="api-tree"></div>
+
+        </div>
+        <div id="right-column">
+                <nav id="site-nav" class="navbar navbar-default" role="navigation">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-elements">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="../../index.html">API</a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar-elements">
+                <ul class="nav navbar-nav">
+                    <li><a href="../../classes.html">Classes</a></li>
+                                            <li><a href="../../namespaces.html">Namespaces</a></li>
+                                        <li><a href="../../interfaces.html">Interfaces</a></li>
+                    <li><a href="../../traits.html">Traits</a></li>
+                    <li><a href="../../doc-index.html">Index</a></li>
+                    <li><a href="../../search.html">Search</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+                        <div class="namespace-breadcrumbs">
+            <ol class="breadcrumb">
+                <li><span class="label label-default">class</span></li>
+                                                            <li><a href="../../Sofa.html">Sofa</a></li>
+                                        <li><a href="../../Sofa/Eloquence.html">Eloquence</a></li>
+    
+                <li>Model</li>
+            </ol>
+        </div>
+                <div id="page-content">
+                
+    <div class="page-header">
+        <h1>Model</h1>
+    </div>
+
+    <p>    class
+    <strong>Model</strong>        extends <abbr title="Illuminate\Database\Eloquent\Model">Model</abbr>        implements
+        <a href="../../Sofa/Eloquence/Contracts/CleansAttributes.html"><abbr title="Sofa\Eloquence\Contracts\CleansAttributes">CleansAttributes</abbr></a>, <a href="../../Sofa/Eloquence/Contracts/Validable.html"><abbr title="Sofa\Eloquence\Contracts\Validable">Validable</abbr></a>
+</p>
+
+    
+            <h2>Traits</h2>
+
+        <div class="container-fluid underlined">
+                    <div class="row">
+                <div class="col-md-6">
+                                            <a href="../../Sofa/Eloquence/Eloquence.html"><abbr title="Sofa\Eloquence\Eloquence">Sofa\Eloquence\Eloquence</abbr></a>
+                                    </div>
+                <div class="col-md-6">
+                    
+
+                </div>
+            </div>
+                    <div class="row">
+                <div class="col-md-6">
+                                            <a href="../../Sofa/Eloquence/Validable.html"><abbr title="Sofa\Eloquence\Validable">Sofa\Eloquence\Validable</abbr></a>
+                                    </div>
+                <div class="col-md-6">
+                    
+
+                </div>
+            </div>
+            </div>
+    
+    
+    
+            <h2>Methods</h2>
+
+            <div class="container-fluid underlined">
+                    <div class="row">
+                <div class="col-md-2 type">
+                    static&nbsp;void
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_bootEloquence">bootEloquence</a>()
+                                            <p>Boot the trait.</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../Sofa/Eloquence/Eloquence.html#method_bootEloquence"><abbr title="Sofa\Eloquence\Eloquence">Eloquence</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    static&nbsp;void
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_hook">hook</a>(string $method, string $hook)
+                                            <p>Register hook on Eloquent method.</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../Sofa/Eloquence/Eloquence.html#method_hook"><abbr title="Sofa\Eloquence\Eloquence">Eloquence</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    static&nbsp;boolean
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_hasHook">hasHook</a>(string $method)
+                                            <p>Determine whether a method has any hooks registered.</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../Sofa/Eloquence/Eloquence.html#method_hasHook"><abbr title="Sofa\Eloquence\Eloquence">Eloquence</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    array
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_parseMappedColumn">parseMappedColumn</a>(string $mapping)
+                                            <p>Get the target relation and column from the mapping.</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../Sofa/Eloquence/Eloquence.html#method_parseMappedColumn"><abbr title="Sofa\Eloquence\Eloquence">Eloquence</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    static&nbsp;boolean
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_hasColumn">hasColumn</a>(string $key)
+                                            <p>Determine whether the key is meta attribute or actual table field.</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../Sofa/Eloquence/Eloquence.html#method_hasColumn"><abbr title="Sofa\Eloquence\Eloquence">Eloquence</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    array
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getSearchableColumns">getSearchableColumns</a>()
+                                            <p>Get searchable columns defined on the model.</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../Sofa/Eloquence/Eloquence.html#method_getSearchableColumns"><abbr title="Sofa\Eloquence\Eloquence">Eloquence</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    static&nbsp;array
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getColumnListing">getColumnListing</a>()
+                                            <p>Get model table columns.</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../Sofa/Eloquence/Eloquence.html#method_getColumnListing"><abbr title="Sofa\Eloquence\Eloquence">Eloquence</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../Sofa/Eloquence/Builder.html"><abbr title="Sofa\Eloquence\Builder">Builder</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_newEloquentBuilder">newEloquentBuilder</a>(<abbr title="Illuminate\Database\Query\Builder">Builder</abbr> $query)
+                                            <p>Create new Eloquence query builder for the instance.</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../Sofa/Eloquence/Eloquence.html#method_newEloquentBuilder"><abbr title="Sofa\Eloquence\Eloquence">Eloquence</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    static&nbsp;void
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_setAttributeMutator">setAttributeMutator</a>(<abbr title="Sofa\Eloquence\Sofa\Eloquence\Contracts\Mutator">Mutator</abbr> $mutator)
+                                            <p>Set attribute mutator instance.</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../Sofa/Eloquence/Eloquence.html#method_setAttributeMutator"><abbr title="Sofa\Eloquence\Eloquence">Eloquence</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    static&nbsp;<a href="../../Sofa/Eloquence/Contracts/Mutator.html"><abbr title="Sofa\Eloquence\Contracts\Mutator">Mutator</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getAttributeMutator">getAttributeMutator</a>()
+                                            <p>Get attribute mutator instance.</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../Sofa/Eloquence/Eloquence.html#method_getAttributeMutator"><abbr title="Sofa\Eloquence\Eloquence">Eloquence</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../Sofa/Eloquence/Builder.html"><abbr title="Sofa\Eloquence\Builder">Builder</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_queryHook">queryHook</a>(<abbr title="Sofa\Eloquence\Sofa\Eloquence\Builder">Builder</abbr> $query, string $method, <abbr title="Sofa\Eloquence\Sofa\Eloquence\ArgumentBag">ArgumentBag</abbr> $args)
+                                            <p>Allow custom where method calls on the builder.</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../Sofa/Eloquence/Eloquence.html#method_queryHook"><abbr title="Sofa\Eloquence\Eloquence">Eloquence</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    mixed
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getAttribute">getAttribute</a>(string $key)
+                                            <p>Register hook for getAttribute.</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../Sofa/Eloquence/Eloquence.html#method_getAttribute"><abbr title="Sofa\Eloquence\Eloquence">Eloquence</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    void
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_setAttribute">setAttribute</a>(string $key, mixed $value)
+                                            <p>Register hook for setAttribute.</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../Sofa/Eloquence/Eloquence.html#method_setAttribute"><abbr title="Sofa\Eloquence\Eloquence">Eloquence</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    boolean
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_save">save</a>(array $options = array())
+                                            <p>Register hook for save.</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../Sofa/Eloquence/Eloquence.html#method_save"><abbr title="Sofa\Eloquence\Eloquence">Eloquence</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    mixed
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_toArray">toArray</a>()
+                                            <p>Register hook for toArray.</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../Sofa/Eloquence/Eloquence.html#method_toArray"><abbr title="Sofa\Eloquence\Eloquence">Eloquence</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    mixed
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_replicate">replicate</a>(array $except = null)
+                                            <p>Register hook for replicate.</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../Sofa/Eloquence/Eloquence.html#method_replicate"><abbr title="Sofa\Eloquence\Eloquence">Eloquence</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    boolean
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method___isset">__isset</a>(string $key)
+                                            <p>Register hook for isset call.</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../Sofa/Eloquence/Eloquence.html#method___isset"><abbr title="Sofa\Eloquence\Eloquence">Eloquence</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    boolean
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method___unset">__unset</a>(string $key)
+                                            <p>Register hook for isset call.</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../Sofa/Eloquence/Eloquence.html#method___unset"><abbr title="Sofa\Eloquence\Eloquence">Eloquence</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <abbr title="Illuminate\Database\Connection">Connection</abbr>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getConnection">getConnection</a>()
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../Sofa/Eloquence/Eloquence.html#method_getConnection"><abbr title="Sofa\Eloquence\Eloquence">Eloquence</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    string
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getTable">getTable</a>()
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../Sofa/Eloquence/Eloquence.html#method_getTable"><abbr title="Sofa\Eloquence\Eloquence">Eloquence</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    static&nbsp;void
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_bootValidable">bootValidable</a>()
+                                            <p>Register hooks for the trait.</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../Sofa/Eloquence/Validable.html#method_bootValidable"><abbr title="Sofa\Eloquence\Validable">Validable</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    boolean
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_isValid">isValid</a>()
+                                            <p>Determine whether all the attributes on this instance pass validation.</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../Sofa/Eloquence/Validable.html#method_isValid"><abbr title="Sofa\Eloquence\Validable">Validable</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <abbr title="Sofa\Eloquence\$this">$this</abbr>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_skipValidation">skipValidation</a>()
+                                            <p>Skip validation on the next saving attempt.</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../Sofa/Eloquence/Validable.html#method_skipValidation"><abbr title="Sofa\Eloquence\Validable">Validable</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <abbr title="Sofa\Eloquence\$this">$this</abbr>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_disableValidation">disableValidation</a>($once = false)
+                                            <p>Disable validation for this instance.</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../Sofa/Eloquence/Validable.html#method_disableValidation"><abbr title="Sofa\Eloquence\Validable">Validable</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <abbr title="Sofa\Eloquence\$this">$this</abbr>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_enableValidation">enableValidation</a>()
+                                            <p>Enable validation for this instance.</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../Sofa/Eloquence/Validable.html#method_enableValidation"><abbr title="Sofa\Eloquence\Validable">Validable</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    integer|<abbr title="Sofa\Eloquence\false">false</abbr>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_skipsValidation">skipsValidation</a>()
+                                            <p>Get current validation flag.</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../Sofa/Eloquence/Validable.html#method_skipsValidation"><abbr title="Sofa\Eloquence\Validable">Validable</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    boolean
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_validationEnabled">validationEnabled</a>()
+                                            <p>Determine whether validation is enabled for this instance.</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../Sofa/Eloquence/Validable.html#method_validationEnabled"><abbr title="Sofa\Eloquence\Validable">Validable</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <abbr title="Illuminate\Support\MessageBag">MessageBag</abbr>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getValidationErrors">getValidationErrors</a>()
+                                            <p>Retrieve validation error messages.</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../Sofa/Eloquence/Validable.html#method_getValidationErrors"><abbr title="Sofa\Eloquence\Validable">Validable</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <abbr title="Illuminate\Support\MessageBag">MessageBag</abbr>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getMessageBag">getMessageBag</a>()
+                                            <p>Retrieve validation error messages.</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../Sofa/Eloquence/Validable.html#method_getMessageBag"><abbr title="Sofa\Eloquence\Validable">Validable</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    array
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getInvalidAttributes">getInvalidAttributes</a>()
+                                            <p>Get names of the attributes that didn't pass validation.</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../Sofa/Eloquence/Validable.html#method_getInvalidAttributes"><abbr title="Sofa\Eloquence\Validable">Validable</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <abbr title="Illuminate\Contracts\Validation\Validator">Validator</abbr>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getValidator">getValidator</a>()
+                                            <p>Get the validator instance.</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../Sofa/Eloquence/Validable.html#method_getValidator"><abbr title="Sofa\Eloquence\Validable">Validable</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    static&nbsp;array
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getValidationMessages">getValidationMessages</a>()
+                                            <p>Get custom validation messages.</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../Sofa/Eloquence/Validable.html#method_getValidationMessages"><abbr title="Sofa\Eloquence\Validable">Validable</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    static&nbsp;array
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getValidationAttributes">getValidationAttributes</a>()
+                                            <p>Get custom validation attribute names.</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../Sofa/Eloquence/Validable.html#method_getValidationAttributes"><abbr title="Sofa\Eloquence\Validable">Validable</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    static&nbsp;array
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getCreateRules">getCreateRules</a>()
+                                            <p>Get all the validation rules for this model.</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../Sofa/Eloquence/Validable.html#method_getCreateRules"><abbr title="Sofa\Eloquence\Validable">Validable</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    array
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getUpdateRules">getUpdateRules</a>()
+                                            <p>Get all validation rules for update on this model.</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../Sofa/Eloquence/Validable.html#method_getUpdateRules"><abbr title="Sofa\Eloquence\Validable">Validable</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    static&nbsp;array
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getUpdateRulesForId">getUpdateRulesForId</a>(<abbr title="Illuminate\Database\Eloquent\Model">Model</abbr>|string $id)
+                                            <p>Get all validation rules for update for given id.</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../Sofa/Eloquence/Validable.html#method_getUpdateRulesForId"><abbr title="Sofa\Eloquence\Validable">Validable</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    static&nbsp;array
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getValidatedFields">getValidatedFields</a>()
+                                            <p>Get array of attributes that have validation rules defined.</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../Sofa/Eloquence/Validable.html#method_getValidatedFields"><abbr title="Sofa\Eloquence\Validable">Validable</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    static&nbsp;void
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_setValidatorFactory">setValidatorFactory</a>(<abbr title="Sofa\Eloquence\Illuminate\Contracts\Validation\Factory">Factory</abbr> $factory)
+                                            <p>Set validation factory instance for this model.</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../Sofa/Eloquence/Validable.html#method_setValidatorFactory"><abbr title="Sofa\Eloquence\Validable">Validable</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    integer
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getKey">getKey</a>()
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../Sofa/Eloquence/Validable.html#method_getKey"><abbr title="Sofa\Eloquence\Validable">Validable</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    string
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getKeyName">getKeyName</a>()
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../Sofa/Eloquence/Validable.html#method_getKeyName"><abbr title="Sofa\Eloquence\Validable">Validable</abbr></a></small></div>
+            </div>
+            </div>
+
+
+        <h2>Details</h2>
+
+            <div id="method-details">
+                    <div class="method-item">
+                    <h3 id="method_bootEloquence">
+        <div class="location">in <a href="../../Sofa/Eloquence/Eloquence.html#method_bootEloquence"><abbr title="Sofa\Eloquence\Eloquence">Eloquence</abbr></a> at line 51</div>
+        <code>        static            void
+    <strong>bootEloquence</strong>()</code>
+    </h3>
+    <div class="details">
+                    <div class="method-description">
+                                    <p>Boot the trait.</p>                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>void</td>
+            <td>
+</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_hook">
+        <div class="location">in <a href="../../Sofa/Eloquence/Eloquence.html#method_hook"><abbr title="Sofa\Eloquence\Eloquence">Eloquence</abbr></a> at line 71</div>
+        <code>        static            void
+    <strong>hook</strong>(string $method, string $hook)</code>
+    </h3>
+    <div class="details">
+                    <div class="method-description">
+                                    <p>Register hook on Eloquent method.</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$method</td>
+                <td>
+</td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$hook</td>
+                <td>
+</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>void</td>
+            <td>
+</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_hasHook">
+        <div class="location">in <a href="../../Sofa/Eloquence/Eloquence.html#method_hasHook"><abbr title="Sofa\Eloquence\Eloquence">Eloquence</abbr></a> at line 116</div>
+        <code>        static            boolean
+    <strong>hasHook</strong>(string $method)</code>
+    </h3>
+    <div class="details">
+                    <div class="method-description">
+                                    <p>Determine whether a method has any hooks registered.</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$method</td>
+                <td>
+</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>boolean</td>
+            <td>
+</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_parseMappedColumn">
+        <div class="location">in <a href="../../Sofa/Eloquence/Eloquence.html#method_parseMappedColumn"><abbr title="Sofa\Eloquence\Eloquence">Eloquence</abbr></a> at line 168</div>
+        <code>                    array
+    <strong>parseMappedColumn</strong>(string $mapping)</code>
+    </h3>
+    <div class="details">
+                    <div class="method-description">
+                                    <p>Get the target relation and column from the mapping.</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$mapping</td>
+                <td>
+</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>array</td>
+            <td>
+</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_hasColumn">
+        <div class="location">in <a href="../../Sofa/Eloquence/Eloquence.html#method_hasColumn"><abbr title="Sofa\Eloquence\Eloquence">Eloquence</abbr></a> at line 185</div>
+        <code>        static            boolean
+    <strong>hasColumn</strong>(string $key)</code>
+    </h3>
+    <div class="details">
+                    <div class="method-description">
+                                    <p>Determine whether the key is meta attribute or actual table field.</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$key</td>
+                <td>
+</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>boolean</td>
+            <td>
+</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getSearchableColumns">
+        <div class="location">in <a href="../../Sofa/Eloquence/Eloquence.html#method_getSearchableColumns"><abbr title="Sofa\Eloquence\Eloquence">Eloquence</abbr></a> at line 197</div>
+        <code>                    array
+    <strong>getSearchableColumns</strong>()</code>
+    </h3>
+    <div class="details">
+                    <div class="method-description">
+                                    <p>Get searchable columns defined on the model.</p>                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>array</td>
+            <td>
+</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getColumnListing">
+        <div class="location">in <a href="../../Sofa/Eloquence/Eloquence.html#method_getColumnListing"><abbr title="Sofa\Eloquence\Eloquence">Eloquence</abbr></a> at line 207</div>
+        <code>        static            array
+    <strong>getColumnListing</strong>()</code>
+    </h3>
+    <div class="details">
+                    <div class="method-description">
+                                    <p>Get model table columns.</p>                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>array</td>
+            <td>
+</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_newEloquentBuilder">
+        <div class="location">in <a href="../../Sofa/Eloquence/Eloquence.html#method_newEloquentBuilder"><abbr title="Sofa\Eloquence\Eloquence">Eloquence</abbr></a> at line 236</div>
+        <code>                    <a href="../../Sofa/Eloquence/Builder.html"><abbr title="Sofa\Eloquence\Builder">Builder</abbr></a>
+    <strong>newEloquentBuilder</strong>(<abbr title="Illuminate\Database\Query\Builder">Builder</abbr> $query)</code>
+    </h3>
+    <div class="details">
+                    <div class="method-description">
+                                    <p>Create new Eloquence query builder for the instance.</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><abbr title="Illuminate\Database\Query\Builder">Builder</abbr></td>
+                <td>$query</td>
+                <td>
+</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../Sofa/Eloquence/Builder.html"><abbr title="Sofa\Eloquence\Builder">Builder</abbr></a></td>
+            <td>
+</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_setAttributeMutator">
+        <div class="location">in <a href="../../Sofa/Eloquence/Eloquence.html#method_setAttributeMutator"><abbr title="Sofa\Eloquence\Eloquence">Eloquence</abbr></a> at line 249</div>
+        <code>        static            void
+    <strong>setAttributeMutator</strong>(<abbr title="Sofa\Eloquence\Sofa\Eloquence\Contracts\Mutator">Mutator</abbr> $mutator)</code>
+    </h3>
+    <div class="details">
+                    <div class="method-description">
+                                    <p>Set attribute mutator instance.</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><abbr title="Sofa\Eloquence\Sofa\Eloquence\Contracts\Mutator">Mutator</abbr></td>
+                <td>$mutator</td>
+                <td>
+</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>void</td>
+            <td>
+</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getAttributeMutator">
+        <div class="location">in <a href="../../Sofa/Eloquence/Eloquence.html#method_getAttributeMutator"><abbr title="Sofa\Eloquence\Eloquence">Eloquence</abbr></a> at line 261</div>
+        <code>        static            <a href="../../Sofa/Eloquence/Contracts/Mutator.html"><abbr title="Sofa\Eloquence\Contracts\Mutator">Mutator</abbr></a>
+    <strong>getAttributeMutator</strong>()</code>
+    </h3>
+    <div class="details">
+                    <div class="method-description">
+                                    <p>Get attribute mutator instance.</p>                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../Sofa/Eloquence/Contracts/Mutator.html"><abbr title="Sofa\Eloquence\Contracts\Mutator">Mutator</abbr></a></td>
+            <td>
+</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_queryHook">
+        <div class="location">in <a href="../../Sofa/Eloquence/Eloquence.html#method_queryHook"><abbr title="Sofa\Eloquence\Eloquence">Eloquence</abbr></a> at line 282</div>
+        <code>                    <a href="../../Sofa/Eloquence/Builder.html"><abbr title="Sofa\Eloquence\Builder">Builder</abbr></a>
+    <strong>queryHook</strong>(<abbr title="Sofa\Eloquence\Sofa\Eloquence\Builder">Builder</abbr> $query, string $method, <abbr title="Sofa\Eloquence\Sofa\Eloquence\ArgumentBag">ArgumentBag</abbr> $args)</code>
+    </h3>
+    <div class="details">
+                    <div class="method-description">
+                                    <p>Allow custom where method calls on the builder.</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><abbr title="Sofa\Eloquence\Sofa\Eloquence\Builder">Builder</abbr></td>
+                <td>$query</td>
+                <td>
+</td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$method</td>
+                <td>
+</td>
+            </tr>
+                    <tr>
+                <td><abbr title="Sofa\Eloquence\Sofa\Eloquence\ArgumentBag">ArgumentBag</abbr></td>
+                <td>$args</td>
+                <td>
+</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../Sofa/Eloquence/Builder.html"><abbr title="Sofa\Eloquence\Builder">Builder</abbr></a></td>
+            <td>
+</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getAttribute">
+        <div class="location">in <a href="../../Sofa/Eloquence/Eloquence.html#method_getAttribute"><abbr title="Sofa\Eloquence\Eloquence">Eloquence</abbr></a> at line 304</div>
+        <code>                    mixed
+    <strong>getAttribute</strong>(string $key)</code>
+    </h3>
+    <div class="details">
+                    <div class="method-description">
+                                    <p>Register hook for getAttribute.</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$key</td>
+                <td>
+</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>mixed</td>
+            <td>
+</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_setAttribute">
+        <div class="location">in <a href="../../Sofa/Eloquence/Eloquence.html#method_setAttribute"><abbr title="Sofa\Eloquence\Eloquence">Eloquence</abbr></a> at line 327</div>
+        <code>                    void
+    <strong>setAttribute</strong>(string $key, mixed $value)</code>
+    </h3>
+    <div class="details">
+                    <div class="method-description">
+                                    <p>Register hook for setAttribute.</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$key</td>
+                <td>
+</td>
+            </tr>
+                    <tr>
+                <td>mixed</td>
+                <td>$value</td>
+                <td>
+</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>void</td>
+            <td>
+</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_save">
+        <div class="location">in <a href="../../Sofa/Eloquence/Eloquence.html#method_save"><abbr title="Sofa\Eloquence\Eloquence">Eloquence</abbr></a> at line 348</div>
+        <code>                    boolean
+    <strong>save</strong>(array $options = array())</code>
+    </h3>
+    <div class="details">
+                    <div class="method-description">
+                                    <p>Register hook for save.</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>array</td>
+                <td>$options</td>
+                <td>
+</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>boolean</td>
+            <td>
+</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_toArray">
+        <div class="location">in <a href="../../Sofa/Eloquence/Eloquence.html#method_toArray"><abbr title="Sofa\Eloquence\Eloquence">Eloquence</abbr></a> at line 373</div>
+        <code>                    mixed
+    <strong>toArray</strong>()</code>
+    </h3>
+    <div class="details">
+                    <div class="method-description">
+                                    <p>Register hook for toArray.</p>                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>mixed</td>
+            <td>
+</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_replicate">
+        <div class="location">in <a href="../../Sofa/Eloquence/Eloquence.html#method_replicate"><abbr title="Sofa\Eloquence\Eloquence">Eloquence</abbr></a> at line 393</div>
+        <code>                    mixed
+    <strong>replicate</strong>(array $except = null)</code>
+    </h3>
+    <div class="details">
+                    <div class="method-description">
+                                    <p>Register hook for replicate.</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>array</td>
+                <td>$except</td>
+                <td>
+</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>mixed</td>
+            <td>
+</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method___isset">
+        <div class="location">in <a href="../../Sofa/Eloquence/Eloquence.html#method___isset"><abbr title="Sofa\Eloquence\Eloquence">Eloquence</abbr></a> at line 416</div>
+        <code>                    boolean
+    <strong>__isset</strong>(string $key)</code>
+    </h3>
+    <div class="details">
+                    <div class="method-description">
+                                    <p>Register hook for isset call.</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$key</td>
+                <td>
+</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>boolean</td>
+            <td>
+</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method___unset">
+        <div class="location">in <a href="../../Sofa/Eloquence/Eloquence.html#method___unset"><abbr title="Sofa\Eloquence\Eloquence">Eloquence</abbr></a> at line 438</div>
+        <code>                    boolean
+    <strong>__unset</strong>(string $key)</code>
+    </h3>
+    <div class="details">
+                    <div class="method-description">
+                                    <p>Register hook for isset call.</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$key</td>
+                <td>
+</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>boolean</td>
+            <td>
+</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getConnection">
+        <div class="location">in <a href="../../Sofa/Eloquence/Eloquence.html#method_getConnection"><abbr title="Sofa\Eloquence\Eloquence">Eloquence</abbr></a> at line 14</div>
+        <code>                    <abbr title="Illuminate\Database\Connection">Connection</abbr>
+    <strong>getConnection</strong>()</code>
+    </h3>
+    <div class="details">
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><abbr title="Illuminate\Database\Connection">Connection</abbr></td>
+            <td>
+</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getTable">
+        <div class="location">in <a href="../../Sofa/Eloquence/Eloquence.html#method_getTable"><abbr title="Sofa\Eloquence\Eloquence">Eloquence</abbr></a> at line 14</div>
+        <code>                    string
+    <strong>getTable</strong>()</code>
+    </h3>
+    <div class="details">
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>string</td>
+            <td>
+</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_bootValidable">
+        <div class="location">in <a href="../../Sofa/Eloquence/Validable.html#method_bootValidable"><abbr title="Sofa\Eloquence\Validable">Validable</abbr></a> at line 47</div>
+        <code>        static            void
+    <strong>bootValidable</strong>()</code>
+    </h3>
+    <div class="details">
+                    <div class="method-description">
+                                    <p>Register hooks for the trait.</p>                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>void</td>
+            <td>
+</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_isValid">
+        <div class="location">in <a href="../../Sofa/Eloquence/Validable.html#method_isValid"><abbr title="Sofa\Eloquence\Validable">Validable</abbr></a> at line 63</div>
+        <code>                    boolean
+    <strong>isValid</strong>()</code>
+    </h3>
+    <div class="details">
+                    <div class="method-description">
+                                    <p>Determine whether all the attributes on this instance pass validation.</p>                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>boolean</td>
+            <td>
+</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_skipValidation">
+        <div class="location">in <a href="../../Sofa/Eloquence/Validable.html#method_skipValidation"><abbr title="Sofa\Eloquence\Validable">Validable</abbr></a> at line 75</div>
+        <code>                    <abbr title="Sofa\Eloquence\$this">$this</abbr>
+    <strong>skipValidation</strong>()</code>
+    </h3>
+    <div class="details">
+                    <div class="method-description">
+                                    <p>Skip validation on the next saving attempt.</p>                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><abbr title="Sofa\Eloquence\$this">$this</abbr></td>
+            <td>
+</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_disableValidation">
+        <div class="location">in <a href="../../Sofa/Eloquence/Validable.html#method_disableValidation"><abbr title="Sofa\Eloquence\Validable">Validable</abbr></a> at line 85</div>
+        <code>                    <abbr title="Sofa\Eloquence\$this">$this</abbr>
+    <strong>disableValidation</strong>($once = false)</code>
+    </h3>
+    <div class="details">
+                    <div class="method-description">
+                                    <p>Disable validation for this instance.</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td></td>
+                <td>$once</td>
+                <td>
+</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><abbr title="Sofa\Eloquence\$this">$this</abbr></td>
+            <td>
+</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_enableValidation">
+        <div class="location">in <a href="../../Sofa/Eloquence/Validable.html#method_enableValidation"><abbr title="Sofa\Eloquence\Validable">Validable</abbr></a> at line 97</div>
+        <code>                    <abbr title="Sofa\Eloquence\$this">$this</abbr>
+    <strong>enableValidation</strong>()</code>
+    </h3>
+    <div class="details">
+                    <div class="method-description">
+                                    <p>Enable validation for this instance.</p>                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><abbr title="Sofa\Eloquence\$this">$this</abbr></td>
+            <td>
+</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_skipsValidation">
+        <div class="location">in <a href="../../Sofa/Eloquence/Validable.html#method_skipsValidation"><abbr title="Sofa\Eloquence\Validable">Validable</abbr></a> at line 109</div>
+        <code>                    integer|<abbr title="Sofa\Eloquence\false">false</abbr>
+    <strong>skipsValidation</strong>()</code>
+    </h3>
+    <div class="details">
+                    <div class="method-description">
+                                    <p>Get current validation flag.</p>                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>integer|<abbr title="Sofa\Eloquence\false">false</abbr></td>
+            <td>
+</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_validationEnabled">
+        <div class="location">in <a href="../../Sofa/Eloquence/Validable.html#method_validationEnabled"><abbr title="Sofa\Eloquence\Validable">Validable</abbr></a> at line 119</div>
+        <code>                    boolean
+    <strong>validationEnabled</strong>()</code>
+    </h3>
+    <div class="details">
+                    <div class="method-description">
+                                    <p>Determine whether validation is enabled for this instance.</p>                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>boolean</td>
+            <td>
+</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getValidationErrors">
+        <div class="location">in <a href="../../Sofa/Eloquence/Validable.html#method_getValidationErrors"><abbr title="Sofa\Eloquence\Validable">Validable</abbr></a> at line 129</div>
+        <code>                    <abbr title="Illuminate\Support\MessageBag">MessageBag</abbr>
+    <strong>getValidationErrors</strong>()</code>
+    </h3>
+    <div class="details">
+                    <div class="method-description">
+                                    <p>Retrieve validation error messages.</p>                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><abbr title="Illuminate\Support\MessageBag">MessageBag</abbr></td>
+            <td>
+</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getMessageBag">
+        <div class="location">in <a href="../../Sofa/Eloquence/Validable.html#method_getMessageBag"><abbr title="Sofa\Eloquence\Validable">Validable</abbr></a> at line 139</div>
+        <code>                    <abbr title="Illuminate\Support\MessageBag">MessageBag</abbr>
+    <strong>getMessageBag</strong>()</code>
+    </h3>
+    <div class="details">
+                    <div class="method-description">
+                                    <p>Retrieve validation error messages.</p>                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><abbr title="Illuminate\Support\MessageBag">MessageBag</abbr></td>
+            <td>
+</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getInvalidAttributes">
+        <div class="location">in <a href="../../Sofa/Eloquence/Validable.html#method_getInvalidAttributes"><abbr title="Sofa\Eloquence\Validable">Validable</abbr></a> at line 149</div>
+        <code>                    array
+    <strong>getInvalidAttributes</strong>()</code>
+    </h3>
+    <div class="details">
+                    <div class="method-description">
+                                    <p>Get names of the attributes that didn't pass validation.</p>                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>array</td>
+            <td>
+</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getValidator">
+        <div class="location">in <a href="../../Sofa/Eloquence/Validable.html#method_getValidator"><abbr title="Sofa\Eloquence\Validable">Validable</abbr></a> at line 159</div>
+        <code>                    <abbr title="Illuminate\Contracts\Validation\Validator">Validator</abbr>
+    <strong>getValidator</strong>()</code>
+    </h3>
+    <div class="details">
+                    <div class="method-description">
+                                    <p>Get the validator instance.</p>                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><abbr title="Illuminate\Contracts\Validation\Validator">Validator</abbr></td>
+            <td>
+</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getValidationMessages">
+        <div class="location">in <a href="../../Sofa/Eloquence/Validable.html#method_getValidationMessages"><abbr title="Sofa\Eloquence\Validable">Validable</abbr></a> at line 178</div>
+        <code>        static            array
+    <strong>getValidationMessages</strong>()</code>
+    </h3>
+    <div class="details">
+                    <div class="method-description">
+                                    <p>Get custom validation messages.</p>                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>array</td>
+            <td>
+</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getValidationAttributes">
+        <div class="location">in <a href="../../Sofa/Eloquence/Validable.html#method_getValidationAttributes"><abbr title="Sofa\Eloquence\Validable">Validable</abbr></a> at line 190</div>
+        <code>        static            array
+    <strong>getValidationAttributes</strong>()</code>
+    </h3>
+    <div class="details">
+                    <div class="method-description">
+                                    <p>Get custom validation attribute names.</p>                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>array</td>
+            <td>
+</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getCreateRules">
+        <div class="location">in <a href="../../Sofa/Eloquence/Validable.html#method_getCreateRules"><abbr title="Sofa\Eloquence\Validable">Validable</abbr></a> at line 202</div>
+        <code>        static            array
+    <strong>getCreateRules</strong>()</code>
+    </h3>
+    <div class="details">
+                    <div class="method-description">
+                                    <p>Get all the validation rules for this model.</p>                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>array</td>
+            <td>
+</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getUpdateRules">
+        <div class="location">in <a href="../../Sofa/Eloquence/Validable.html#method_getUpdateRules"><abbr title="Sofa\Eloquence\Validable">Validable</abbr></a> at line 257</div>
+        <code>                    array
+    <strong>getUpdateRules</strong>()</code>
+    </h3>
+    <div class="details">
+                    <div class="method-description">
+                                    <p>Get all validation rules for update on this model.</p>                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>array</td>
+            <td>
+</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getUpdateRulesForId">
+        <div class="location">in <a href="../../Sofa/Eloquence/Validable.html#method_getUpdateRulesForId"><abbr title="Sofa\Eloquence\Validable">Validable</abbr></a> at line 268</div>
+        <code>        static            array
+    <strong>getUpdateRulesForId</strong>(<abbr title="Illuminate\Database\Eloquent\Model">Model</abbr>|string $id)</code>
+    </h3>
+    <div class="details">
+                    <div class="method-description">
+                                    <p>Get all validation rules for update for given id.</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><abbr title="Illuminate\Database\Eloquent\Model">Model</abbr>|string</td>
+                <td>$id</td>
+                <td>
+</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>array</td>
+            <td>
+</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getValidatedFields">
+        <div class="location">in <a href="../../Sofa/Eloquence/Validable.html#method_getValidatedFields"><abbr title="Sofa\Eloquence\Validable">Validable</abbr></a> at line 278</div>
+        <code>        static            array
+    <strong>getValidatedFields</strong>()</code>
+    </h3>
+    <div class="details">
+                    <div class="method-description">
+                                    <p>Get array of attributes that have validation rules defined.</p>                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>array</td>
+            <td>
+</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_setValidatorFactory">
+        <div class="location">in <a href="../../Sofa/Eloquence/Validable.html#method_setValidatorFactory"><abbr title="Sofa\Eloquence\Validable">Validable</abbr></a> at line 324</div>
+        <code>        static            void
+    <strong>setValidatorFactory</strong>(<abbr title="Sofa\Eloquence\Illuminate\Contracts\Validation\Factory">Factory</abbr> $factory)</code>
+    </h3>
+    <div class="details">
+                    <div class="method-description">
+                                    <p>Set validation factory instance for this model.</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><abbr title="Sofa\Eloquence\Illuminate\Contracts\Validation\Factory">Factory</abbr></td>
+                <td>$factory</td>
+                <td>
+</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>void</td>
+            <td>
+</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getKey">
+        <div class="location">in <a href="../../Sofa/Eloquence/Validable.html#method_getKey"><abbr title="Sofa\Eloquence\Validable">Validable</abbr></a> at line 10</div>
+        <code>                    integer
+    <strong>getKey</strong>()</code>
+    </h3>
+    <div class="details">
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>integer</td>
+            <td>
+</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getKeyName">
+        <div class="location">in <a href="../../Sofa/Eloquence/Validable.html#method_getKeyName"><abbr title="Sofa\Eloquence\Validable">Validable</abbr></a> at line 10</div>
+        <code>                    string
+    <strong>getKeyName</strong>()</code>
+    </h3>
+    <div class="details">
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>string</td>
+            <td>
+</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+            </div>
+
+    
+            </div>
+                <div id="footer">
+        Generated by <a href="http://sami.sensiolabs.org/">Sami, the API Documentation Generator</a>.
+    </div>
+
+        </div>
+    </div>
+    </body>
+
+</html>

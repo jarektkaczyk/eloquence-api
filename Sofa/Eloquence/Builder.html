@@ -1,0 +1,2304 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="robots" content="index, follow, all" />
+    <title>Sofa\Eloquence\Builder | API</title>
+
+            <link rel="stylesheet" type="text/css" href="../../css/bootstrap.min.css">
+        <link rel="stylesheet" type="text/css" href="../../css/bootstrap-theme.min.css">
+        <link rel="stylesheet" type="text/css" href="../../css/sami.css">
+        <script src="../../js/jquery-1.11.1.min.js"></script>
+        <script src="../../js/bootstrap.min.js"></script>
+        <script src="../../js/typeahead.min.js"></script>
+        <script src="../../sami.js"></script>
+        <meta name="MobileOptimized" content="width">
+        <meta name="HandheldFriendly" content="true">
+        <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1">
+    
+    
+    </head>
+
+    <body id="class" data-name="class:Sofa_Eloquence_Builder" data-root-path="../../">
+            <div id="content">
+        <div id="left-column">
+                <div id="control-panel">
+                <form id="search-form" action="../../search.html" method="GET">
+            <span class="glyphicon glyphicon-search"></span>
+            <input name="search"
+                   class="typeahead form-control"
+                   type="search"
+                   placeholder="Search">
+        </form>
+    </div>
+
+                <div id="api-tree"></div>
+
+        </div>
+        <div id="right-column">
+                <nav id="site-nav" class="navbar navbar-default" role="navigation">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-elements">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="../../index.html">API</a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar-elements">
+                <ul class="nav navbar-nav">
+                    <li><a href="../../classes.html">Classes</a></li>
+                                            <li><a href="../../namespaces.html">Namespaces</a></li>
+                                        <li><a href="../../interfaces.html">Interfaces</a></li>
+                    <li><a href="../../traits.html">Traits</a></li>
+                    <li><a href="../../doc-index.html">Index</a></li>
+                    <li><a href="../../search.html">Search</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+                        <div class="namespace-breadcrumbs">
+            <ol class="breadcrumb">
+                <li><span class="label label-default">class</span></li>
+                                                            <li><a href="../../Sofa.html">Sofa</a></li>
+                                        <li><a href="../../Sofa/Eloquence.html">Eloquence</a></li>
+    
+                <li>Builder</li>
+            </ol>
+        </div>
+                <div id="page-content">
+                
+    <div class="page-header">
+        <h1>Builder</h1>
+    </div>
+
+    <p>    class
+    <strong>Builder</strong>        extends <abbr title="Illuminate\Database\Eloquent\Builder">Builder</abbr>
+</p>
+
+    
+    
+    
+    
+            <h2>Methods</h2>
+
+            <div class="container-fluid underlined">
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <abbr title="Sofa\Eloquence\$this">$this</abbr>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_search">search</a>(array|string $query, array $columns = null, boolean $fulltext = true, float $threshold = null)
+                                            <p>Search through any columns on current table or any defined relations
+and return results ordered by search relevance.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    string
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getLikeOperator">getLikeOperator</a>()
+                                            <p>Get driver-specific case insensitive like operator.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    void
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_prefixColumnsForJoin">prefixColumnsForJoin</a>()
+                                            <p>Prefix selected columns with table name in order to avoid collisions.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <abbr title="Sofa\Eloquence\$this">$this</abbr>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_joinRelations">joinRelations</a>(array|string $relations, string $type = &#039;inner&#039;)
+                                            <p>Join related tables.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <abbr title="Sofa\Eloquence\$this">$this</abbr>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_leftJoinRelations">leftJoinRelations</a>(array|string $relations)
+                                            <p>Left join related tables.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <abbr title="Sofa\Eloquence\$this">$this</abbr>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_rightJoinRelations">rightJoinRelations</a>(array|string $relations)
+                                            <p>Right join related tables.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    static&nbsp;
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_setParserFactory">setParserFactory</a>(<abbr title="Sofa\Eloquence\Sofa\Eloquence\Contracts\Searchable\ParserFactory">ParserFactory</abbr> $factory)
+                                            <p>Set search query parser factory instance.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    static&nbsp;
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_setJoinerFactory">setJoinerFactory</a>(<abbr title="Sofa\Eloquence\Sofa\Eloquence\Contracts\Relations\JoinerFactory">JoinerFactory</abbr> $factory)
+                                            <p>Set the relations joiner factory instance.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    mixed
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_callParent">callParent</a>(string $method, array $args)
+                                            <p>Call base Eloquent method.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <abbr title="Illuminate\Database\Eloquent\Collection">Collection</abbr>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_get">get</a>(array $columns = array(&#039;*&#039;))
+                                            <p>Execute the query as a "select" statement.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <abbr title="Sofa\Eloquence\$this">$this</abbr>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_select">select</a>(array $columns = array(&#039;*&#039;))
+                                            <p>Set the columns to be selected.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <abbr title="Sofa\Eloquence\$this">$this</abbr>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_where">where</a>(mixed $column, string $operator = null, mixed $value = null, string $boolean = &#039;and&#039;)
+                                            <p>Add where constraint to the query.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <abbr title="Sofa\Eloquence\$this">$this</abbr>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_orWhere">orWhere</a>(string $column, string $operator = null, mixed $value = null)
+                                            <p>Add an "or where" clause to the query.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <abbr title="Sofa\Eloquence\$this">$this</abbr>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_whereBetween">whereBetween</a>(string $column, array $values, string $boolean = &#039;and&#039;, boolean $not = false)
+                                            <p>Add a where between statement to the query.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <abbr title="Sofa\Eloquence\$this">$this</abbr>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_orWhereBetween">orWhereBetween</a>(string $column, array $values)
+                                            <p>Add an or where between statement to the query.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <abbr title="Sofa\Eloquence\$this">$this</abbr>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_whereNotBetween">whereNotBetween</a>(string $column, array $values, string $boolean = &#039;and&#039;)
+                                            <p>Add a where not between statement to the query.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <abbr title="Sofa\Eloquence\$this">$this</abbr>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_orWhereNotBetween">orWhereNotBetween</a>(string $column, array $values)
+                                            <p>Add an or where not between statement to the query.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <abbr title="Sofa\Eloquence\$this">$this</abbr>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_whereIn">whereIn</a>(string $column, mixed $values, string $boolean = &#039;and&#039;, bool $not = false)
+                                            <p>Add a "where in" clause to the query.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <abbr title="Sofa\Eloquence\$this">$this</abbr>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_orWhereIn">orWhereIn</a>(string $column, mixed $values)
+                                            <p>Add an "or where in" clause to the query.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <abbr title="Sofa\Eloquence\$this">$this</abbr>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_whereNotIn">whereNotIn</a>(string $column, mixed $values, string $boolean = &#039;and&#039;)
+                                            <p>Add a "where not in" clause to the query.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <abbr title="Sofa\Eloquence\$this">$this</abbr>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_orWhereNotIn">orWhereNotIn</a>(string $column, mixed $values)
+                                            <p>Add an "or where not in" clause to the query.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <abbr title="Sofa\Eloquence\$this">$this</abbr>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_whereNull">whereNull</a>(string $column, string $boolean = &#039;and&#039;, bool $not = false)
+                                            <p>Add a "where null" clause to the query.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <abbr title="Sofa\Eloquence\$this">$this</abbr>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_orWhereNull">orWhereNull</a>(string $column)
+                                            <p>Add an "or where null" clause to the query.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <abbr title="Sofa\Eloquence\$this">$this</abbr>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_whereNotNull">whereNotNull</a>(string $column, string $boolean = &#039;and&#039;)
+                                            <p>Add a "where not null" clause to the query.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <abbr title="Sofa\Eloquence\$this">$this</abbr>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_orWhereNotNull">orWhereNotNull</a>(string $column)
+                                            <p>Add an "or where not null" clause to the query.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <abbr title="Sofa\Eloquence\$this">$this</abbr>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_whereDate">whereDate</a>(string $column, string $operator, int $value, string $boolean = &#039;and&#039;)
+                                            <p>Add a "where date" statement to the query.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <abbr title="Sofa\Eloquence\$this">$this</abbr>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_whereDay">whereDay</a>(string $column, string $operator, int $value, string $boolean = &#039;and&#039;)
+                                            <p>Add a "where day" statement to the query.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <abbr title="Sofa\Eloquence\$this">$this</abbr>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_whereMonth">whereMonth</a>(string $column, string $operator, int $value, string $boolean = &#039;and&#039;)
+                                            <p>Add a "where month" statement to the query.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <abbr title="Sofa\Eloquence\$this">$this</abbr>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_whereYear">whereYear</a>(string $column, string $operator, int $value, string $boolean = &#039;and&#039;)
+                                            <p>Add a "where year" statement to the query.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <abbr title="Sofa\Eloquence\$this">$this</abbr>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_whereExists">whereExists</a>(<a target="_blank" href="http://php.net/Closure"><abbr title="Closure">Closure</abbr></a> $callback, string $boolean = &#039;and&#039;, bool $not = false)
+                                            <p>Add an exists clause to the query.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <abbr title="Sofa\Eloquence\$this">$this</abbr>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_orderBy">orderBy</a>(string $column, string $direction = &#039;asc&#039;)
+                                            <p>Add an "order by" clause to the query.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <abbr title="Sofa\Eloquence\$this">$this</abbr>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_latest">latest</a>(string $column = &#039;created_at&#039;)
+                                            <p>Add an "order by" clause for a timestamp to the query.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <abbr title="Sofa\Eloquence\$this">$this</abbr>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_oldest">oldest</a>(string $column = &#039;created_at&#039;)
+                                            <p>Add an "order by" clause for a timestamp to the query.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    mixed
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_pluck">pluck</a>(string $column)
+                                            <p>Pluck a single column from the database.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    mixed
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_aggregate">aggregate</a>(string $function, array $columns = array(&#039;*&#039;))
+                                            <p>Execute an aggregate function on the database.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    mixed
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_min">min</a>(string $column)
+                                            <p>Retrieve the minimum value of a given column.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    mixed
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_max">max</a>(string $column)
+                                            <p>Retrieve the maximum value of a given column.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    mixed
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_avg">avg</a>(string $column)
+                                            <p>Retrieve the average of the values of a given column.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    mixed
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_sum">sum</a>(string $column)
+                                            <p>Retrieve the sum of the values of a given column.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    int
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_count">count</a>(string $columns = &#039;*&#039;)
+                                            <p>Retrieve the "count" result of the query.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    array
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_lists">lists</a>(string $column, string $key = null)
+                                            <p>Get an array with the values of a given column.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../Sofa/Eloquence/Builder.html"><abbr title="Sofa\Eloquence\Builder">Builder</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_newQuery">newQuery</a>()
+                                            <p>Get a new instance of the Eloquence query builder.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+            </div>
+
+
+        <h2>Details</h2>
+
+            <div id="method-details">
+                    <div class="method-item">
+                    <h3 id="method_search">
+        <div class="location">at line 81</div>
+        <code>                    <abbr title="Sofa\Eloquence\$this">$this</abbr>
+    <strong>search</strong>(array|string $query, array $columns = null, boolean $fulltext = true, float $threshold = null)</code>
+    </h3>
+    <div class="details">
+                    <div class="method-description">
+                                    <p>Search through any columns on current table or any defined relations
+and return results ordered by search relevance.</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>array|string</td>
+                <td>$query</td>
+                <td>
+</td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$columns</td>
+                <td>
+</td>
+            </tr>
+                    <tr>
+                <td>boolean</td>
+                <td>$fulltext</td>
+                <td>
+</td>
+            </tr>
+                    <tr>
+                <td>float</td>
+                <td>$threshold</td>
+                <td>
+</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><abbr title="Sofa\Eloquence\$this">$this</abbr></td>
+            <td>
+</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getLikeOperator">
+        <div class="location">at line 432</div>
+        <code>                    string
+    <strong>getLikeOperator</strong>()</code>
+    </h3>
+    <div class="details">
+                    <div class="method-description">
+                                    <p>Get driver-specific case insensitive like operator.</p>                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>string</td>
+            <td>
+</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_prefixColumnsForJoin">
+        <div class="location">at line 488</div>
+        <code>                    void
+    <strong>prefixColumnsForJoin</strong>()</code>
+    </h3>
+    <div class="details">
+                    <div class="method-description">
+                                    <p>Prefix selected columns with table name in order to avoid collisions.</p>                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>void</td>
+            <td>
+</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_joinRelations">
+        <div class="location">at line 510</div>
+        <code>                    <abbr title="Sofa\Eloquence\$this">$this</abbr>
+    <strong>joinRelations</strong>(array|string $relations, string $type = &#039;inner&#039;)</code>
+    </h3>
+    <div class="details">
+                    <div class="method-description">
+                                    <p>Join related tables.</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>array|string</td>
+                <td>$relations</td>
+                <td>
+</td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$type</td>
+                <td>
+</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><abbr title="Sofa\Eloquence\$this">$this</abbr></td>
+            <td>
+</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_leftJoinRelations">
+        <div class="location">at line 533</div>
+        <code>                    <abbr title="Sofa\Eloquence\$this">$this</abbr>
+    <strong>leftJoinRelations</strong>(array|string $relations)</code>
+    </h3>
+    <div class="details">
+                    <div class="method-description">
+                                    <p>Left join related tables.</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>array|string</td>
+                <td>$relations</td>
+                <td>
+</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><abbr title="Sofa\Eloquence\$this">$this</abbr></td>
+            <td>
+</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_rightJoinRelations">
+        <div class="location">at line 546</div>
+        <code>                    <abbr title="Sofa\Eloquence\$this">$this</abbr>
+    <strong>rightJoinRelations</strong>(array|string $relations)</code>
+    </h3>
+    <div class="details">
+                    <div class="method-description">
+                                    <p>Right join related tables.</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>array|string</td>
+                <td>$relations</td>
+                <td>
+</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><abbr title="Sofa\Eloquence\$this">$this</abbr></td>
+            <td>
+</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_setParserFactory">
+        <div class="location">at line 558</div>
+        <code>        static            
+    <strong>setParserFactory</strong>(<abbr title="Sofa\Eloquence\Sofa\Eloquence\Contracts\Searchable\ParserFactory">ParserFactory</abbr> $factory)</code>
+    </h3>
+    <div class="details">
+                    <div class="method-description">
+                                    <p>Set search query parser factory instance.</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><abbr title="Sofa\Eloquence\Sofa\Eloquence\Contracts\Searchable\ParserFactory">ParserFactory</abbr></td>
+                <td>$factory</td>
+                <td>
+</td>
+            </tr>
+            </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_setJoinerFactory">
+        <div class="location">at line 568</div>
+        <code>        static            
+    <strong>setJoinerFactory</strong>(<abbr title="Sofa\Eloquence\Sofa\Eloquence\Contracts\Relations\JoinerFactory">JoinerFactory</abbr> $factory)</code>
+    </h3>
+    <div class="details">
+                    <div class="method-description">
+                                    <p>Set the relations joiner factory instance.</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><abbr title="Sofa\Eloquence\Sofa\Eloquence\Contracts\Relations\JoinerFactory">JoinerFactory</abbr></td>
+                <td>$factory</td>
+                <td>
+</td>
+            </tr>
+            </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_callParent">
+        <div class="location">at line 586</div>
+        <code>                    mixed
+    <strong>callParent</strong>(string $method, array $args)</code>
+    </h3>
+    <div class="details">
+                    <div class="method-description">
+                                    <p>Call base Eloquent method.</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$method</td>
+                <td>
+</td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$args</td>
+                <td>
+</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>mixed</td>
+            <td>
+</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_get">
+        <div class="location">at line 644</div>
+        <code>                    <abbr title="Illuminate\Database\Eloquent\Collection">Collection</abbr>
+    <strong>get</strong>(array $columns = array(&#039;*&#039;))</code>
+    </h3>
+    <div class="details">
+                    <div class="method-description">
+                                    <p>Execute the query as a "select" statement.</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>array</td>
+                <td>$columns</td>
+                <td>
+</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><abbr title="Illuminate\Database\Eloquent\Collection">Collection</abbr></td>
+            <td>
+</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_select">
+        <div class="location">at line 659</div>
+        <code>                    <abbr title="Sofa\Eloquence\$this">$this</abbr>
+    <strong>select</strong>(array $columns = array(&#039;*&#039;))</code>
+    </h3>
+    <div class="details">
+                    <div class="method-description">
+                                    <p>Set the columns to be selected.</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>array</td>
+                <td>$columns</td>
+                <td>
+</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><abbr title="Sofa\Eloquence\$this">$this</abbr></td>
+            <td>
+</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_where">
+        <div class="location">at line 675</div>
+        <code>                    <abbr title="Sofa\Eloquence\$this">$this</abbr>
+    <strong>where</strong>(mixed $column, string $operator = null, mixed $value = null, string $boolean = &#039;and&#039;)</code>
+    </h3>
+    <div class="details">
+                    <div class="method-description">
+                                    <p>Add where constraint to the query.</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>mixed</td>
+                <td>$column</td>
+                <td>
+</td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$operator</td>
+                <td>
+</td>
+            </tr>
+                    <tr>
+                <td>mixed</td>
+                <td>$value</td>
+                <td>
+</td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$boolean</td>
+                <td>
+</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><abbr title="Sofa\Eloquence\$this">$this</abbr></td>
+            <td>
+</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_orWhere">
+        <div class="location">at line 694</div>
+        <code>                    <abbr title="Sofa\Eloquence\$this">$this</abbr>
+    <strong>orWhere</strong>(string $column, string $operator = null, mixed $value = null)</code>
+    </h3>
+    <div class="details">
+                    <div class="method-description">
+                                    <p>Add an "or where" clause to the query.</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$column</td>
+                <td>
+</td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$operator</td>
+                <td>
+</td>
+            </tr>
+                    <tr>
+                <td>mixed</td>
+                <td>$value</td>
+                <td>
+</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><abbr title="Sofa\Eloquence\$this">$this</abbr></td>
+            <td>
+</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_whereBetween">
+        <div class="location">at line 710</div>
+        <code>                    <abbr title="Sofa\Eloquence\$this">$this</abbr>
+    <strong>whereBetween</strong>(string $column, array $values, string $boolean = &#039;and&#039;, boolean $not = false)</code>
+    </h3>
+    <div class="details">
+                    <div class="method-description">
+                                    <p>Add a where between statement to the query.</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$column</td>
+                <td>
+</td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$values</td>
+                <td>
+</td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$boolean</td>
+                <td>
+</td>
+            </tr>
+                    <tr>
+                <td>boolean</td>
+                <td>$not</td>
+                <td>
+</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><abbr title="Sofa\Eloquence\$this">$this</abbr></td>
+            <td>
+</td>
+        </tr>
+    </table>
+
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a target="_blank" href="http://php.net/InvalidArgumentException"><abbr title="InvalidArgumentException">InvalidArgumentException</abbr></a></td>
+                <td>
+</td>
+            </tr>
+            </table>
+
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_orWhereBetween">
+        <div class="location">at line 728</div>
+        <code>                    <abbr title="Sofa\Eloquence\$this">$this</abbr>
+    <strong>orWhereBetween</strong>(string $column, array $values)</code>
+    </h3>
+    <div class="details">
+                    <div class="method-description">
+                                    <p>Add an or where between statement to the query.</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$column</td>
+                <td>
+</td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$values</td>
+                <td>
+</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><abbr title="Sofa\Eloquence\$this">$this</abbr></td>
+            <td>
+</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_whereNotBetween">
+        <div class="location">at line 741</div>
+        <code>                    <abbr title="Sofa\Eloquence\$this">$this</abbr>
+    <strong>whereNotBetween</strong>(string $column, array $values, string $boolean = &#039;and&#039;)</code>
+    </h3>
+    <div class="details">
+                    <div class="method-description">
+                                    <p>Add a where not between statement to the query.</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$column</td>
+                <td>
+</td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$values</td>
+                <td>
+</td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$boolean</td>
+                <td>
+</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><abbr title="Sofa\Eloquence\$this">$this</abbr></td>
+            <td>
+</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_orWhereNotBetween">
+        <div class="location">at line 753</div>
+        <code>                    <abbr title="Sofa\Eloquence\$this">$this</abbr>
+    <strong>orWhereNotBetween</strong>(string $column, array $values)</code>
+    </h3>
+    <div class="details">
+                    <div class="method-description">
+                                    <p>Add an or where not between statement to the query.</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$column</td>
+                <td>
+</td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$values</td>
+                <td>
+</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><abbr title="Sofa\Eloquence\$this">$this</abbr></td>
+            <td>
+</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_whereIn">
+        <div class="location">at line 768</div>
+        <code>                    <abbr title="Sofa\Eloquence\$this">$this</abbr>
+    <strong>whereIn</strong>(string $column, mixed $values, string $boolean = &#039;and&#039;, bool $not = false)</code>
+    </h3>
+    <div class="details">
+                    <div class="method-description">
+                                    <p>Add a "where in" clause to the query.</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$column</td>
+                <td>
+</td>
+            </tr>
+                    <tr>
+                <td>mixed</td>
+                <td>$values</td>
+                <td>
+</td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$boolean</td>
+                <td>
+</td>
+            </tr>
+                    <tr>
+                <td>bool</td>
+                <td>$not</td>
+                <td>
+</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><abbr title="Sofa\Eloquence\$this">$this</abbr></td>
+            <td>
+</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_orWhereIn">
+        <div class="location">at line 780</div>
+        <code>                    <abbr title="Sofa\Eloquence\$this">$this</abbr>
+    <strong>orWhereIn</strong>(string $column, mixed $values)</code>
+    </h3>
+    <div class="details">
+                    <div class="method-description">
+                                    <p>Add an "or where in" clause to the query.</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$column</td>
+                <td>
+</td>
+            </tr>
+                    <tr>
+                <td>mixed</td>
+                <td>$values</td>
+                <td>
+</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><abbr title="Sofa\Eloquence\$this">$this</abbr></td>
+            <td>
+</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_whereNotIn">
+        <div class="location">at line 793</div>
+        <code>                    <abbr title="Sofa\Eloquence\$this">$this</abbr>
+    <strong>whereNotIn</strong>(string $column, mixed $values, string $boolean = &#039;and&#039;)</code>
+    </h3>
+    <div class="details">
+                    <div class="method-description">
+                                    <p>Add a "where not in" clause to the query.</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$column</td>
+                <td>
+</td>
+            </tr>
+                    <tr>
+                <td>mixed</td>
+                <td>$values</td>
+                <td>
+</td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$boolean</td>
+                <td>
+</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><abbr title="Sofa\Eloquence\$this">$this</abbr></td>
+            <td>
+</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_orWhereNotIn">
+        <div class="location">at line 805</div>
+        <code>                    <abbr title="Sofa\Eloquence\$this">$this</abbr>
+    <strong>orWhereNotIn</strong>(string $column, mixed $values)</code>
+    </h3>
+    <div class="details">
+                    <div class="method-description">
+                                    <p>Add an "or where not in" clause to the query.</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$column</td>
+                <td>
+</td>
+            </tr>
+                    <tr>
+                <td>mixed</td>
+                <td>$values</td>
+                <td>
+</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><abbr title="Sofa\Eloquence\$this">$this</abbr></td>
+            <td>
+</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_whereNull">
+        <div class="location">at line 818</div>
+        <code>                    <abbr title="Sofa\Eloquence\$this">$this</abbr>
+    <strong>whereNull</strong>(string $column, string $boolean = &#039;and&#039;, bool $not = false)</code>
+    </h3>
+    <div class="details">
+                    <div class="method-description">
+                                    <p>Add a "where null" clause to the query.</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$column</td>
+                <td>
+</td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$boolean</td>
+                <td>
+</td>
+            </tr>
+                    <tr>
+                <td>bool</td>
+                <td>$not</td>
+                <td>
+</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><abbr title="Sofa\Eloquence\$this">$this</abbr></td>
+            <td>
+</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_orWhereNull">
+        <div class="location">at line 829</div>
+        <code>                    <abbr title="Sofa\Eloquence\$this">$this</abbr>
+    <strong>orWhereNull</strong>(string $column)</code>
+    </h3>
+    <div class="details">
+                    <div class="method-description">
+                                    <p>Add an "or where null" clause to the query.</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$column</td>
+                <td>
+</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><abbr title="Sofa\Eloquence\$this">$this</abbr></td>
+            <td>
+</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_whereNotNull">
+        <div class="location">at line 841</div>
+        <code>                    <abbr title="Sofa\Eloquence\$this">$this</abbr>
+    <strong>whereNotNull</strong>(string $column, string $boolean = &#039;and&#039;)</code>
+    </h3>
+    <div class="details">
+                    <div class="method-description">
+                                    <p>Add a "where not null" clause to the query.</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$column</td>
+                <td>
+</td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$boolean</td>
+                <td>
+</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><abbr title="Sofa\Eloquence\$this">$this</abbr></td>
+            <td>
+</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_orWhereNotNull">
+        <div class="location">at line 852</div>
+        <code>                    <abbr title="Sofa\Eloquence\$this">$this</abbr>
+    <strong>orWhereNotNull</strong>(string $column)</code>
+    </h3>
+    <div class="details">
+                    <div class="method-description">
+                                    <p>Add an "or where not null" clause to the query.</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$column</td>
+                <td>
+</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><abbr title="Sofa\Eloquence\$this">$this</abbr></td>
+            <td>
+</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_whereDate">
+        <div class="location">at line 881</div>
+        <code>                    <abbr title="Sofa\Eloquence\$this">$this</abbr>
+    <strong>whereDate</strong>(string $column, string $operator, int $value, string $boolean = &#039;and&#039;)</code>
+    </h3>
+    <div class="details">
+                    <div class="method-description">
+                                    <p>Add a "where date" statement to the query.</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$column</td>
+                <td>
+</td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$operator</td>
+                <td>
+</td>
+            </tr>
+                    <tr>
+                <td>int</td>
+                <td>$value</td>
+                <td>
+</td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$boolean</td>
+                <td>
+</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><abbr title="Sofa\Eloquence\$this">$this</abbr></td>
+            <td>
+</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_whereDay">
+        <div class="location">at line 895</div>
+        <code>                    <abbr title="Sofa\Eloquence\$this">$this</abbr>
+    <strong>whereDay</strong>(string $column, string $operator, int $value, string $boolean = &#039;and&#039;)</code>
+    </h3>
+    <div class="details">
+                    <div class="method-description">
+                                    <p>Add a "where day" statement to the query.</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$column</td>
+                <td>
+</td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$operator</td>
+                <td>
+</td>
+            </tr>
+                    <tr>
+                <td>int</td>
+                <td>$value</td>
+                <td>
+</td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$boolean</td>
+                <td>
+</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><abbr title="Sofa\Eloquence\$this">$this</abbr></td>
+            <td>
+</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_whereMonth">
+        <div class="location">at line 909</div>
+        <code>                    <abbr title="Sofa\Eloquence\$this">$this</abbr>
+    <strong>whereMonth</strong>(string $column, string $operator, int $value, string $boolean = &#039;and&#039;)</code>
+    </h3>
+    <div class="details">
+                    <div class="method-description">
+                                    <p>Add a "where month" statement to the query.</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$column</td>
+                <td>
+</td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$operator</td>
+                <td>
+</td>
+            </tr>
+                    <tr>
+                <td>int</td>
+                <td>$value</td>
+                <td>
+</td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$boolean</td>
+                <td>
+</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><abbr title="Sofa\Eloquence\$this">$this</abbr></td>
+            <td>
+</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_whereYear">
+        <div class="location">at line 923</div>
+        <code>                    <abbr title="Sofa\Eloquence\$this">$this</abbr>
+    <strong>whereYear</strong>(string $column, string $operator, int $value, string $boolean = &#039;and&#039;)</code>
+    </h3>
+    <div class="details">
+                    <div class="method-description">
+                                    <p>Add a "where year" statement to the query.</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$column</td>
+                <td>
+</td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$operator</td>
+                <td>
+</td>
+            </tr>
+                    <tr>
+                <td>int</td>
+                <td>$value</td>
+                <td>
+</td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$boolean</td>
+                <td>
+</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><abbr title="Sofa\Eloquence\$this">$this</abbr></td>
+            <td>
+</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_whereExists">
+        <div class="location">at line 936</div>
+        <code>                    <abbr title="Sofa\Eloquence\$this">$this</abbr>
+    <strong>whereExists</strong>(<a target="_blank" href="http://php.net/Closure"><abbr title="Closure">Closure</abbr></a> $callback, string $boolean = &#039;and&#039;, bool $not = false)</code>
+    </h3>
+    <div class="details">
+                    <div class="method-description">
+                                    <p>Add an exists clause to the query.</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a target="_blank" href="http://php.net/Closure"><abbr title="Closure">Closure</abbr></a></td>
+                <td>$callback</td>
+                <td>
+</td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$boolean</td>
+                <td>
+</td>
+            </tr>
+                    <tr>
+                <td>bool</td>
+                <td>$not</td>
+                <td>
+</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><abbr title="Sofa\Eloquence\$this">$this</abbr></td>
+            <td>
+</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_orderBy">
+        <div class="location">at line 960</div>
+        <code>                    <abbr title="Sofa\Eloquence\$this">$this</abbr>
+    <strong>orderBy</strong>(string $column, string $direction = &#039;asc&#039;)</code>
+    </h3>
+    <div class="details">
+                    <div class="method-description">
+                                    <p>Add an "order by" clause to the query.</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$column</td>
+                <td>
+</td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$direction</td>
+                <td>
+</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><abbr title="Sofa\Eloquence\$this">$this</abbr></td>
+            <td>
+</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_latest">
+        <div class="location">at line 971</div>
+        <code>                    <abbr title="Sofa\Eloquence\$this">$this</abbr>
+    <strong>latest</strong>(string $column = &#039;created_at&#039;)</code>
+    </h3>
+    <div class="details">
+                    <div class="method-description">
+                                    <p>Add an "order by" clause for a timestamp to the query.</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$column</td>
+                <td>
+</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><abbr title="Sofa\Eloquence\$this">$this</abbr></td>
+            <td>
+</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_oldest">
+        <div class="location">at line 982</div>
+        <code>                    <abbr title="Sofa\Eloquence\$this">$this</abbr>
+    <strong>oldest</strong>(string $column = &#039;created_at&#039;)</code>
+    </h3>
+    <div class="details">
+                    <div class="method-description">
+                                    <p>Add an "order by" clause for a timestamp to the query.</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$column</td>
+                <td>
+</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><abbr title="Sofa\Eloquence\$this">$this</abbr></td>
+            <td>
+</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_pluck">
+        <div class="location">at line 993</div>
+        <code>                    mixed
+    <strong>pluck</strong>(string $column)</code>
+    </h3>
+    <div class="details">
+                    <div class="method-description">
+                                    <p>Pluck a single column from the database.</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$column</td>
+                <td>
+</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>mixed</td>
+            <td>
+</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_aggregate">
+        <div class="location">at line 1005</div>
+        <code>                    mixed
+    <strong>aggregate</strong>(string $function, array $columns = array(&#039;*&#039;))</code>
+    </h3>
+    <div class="details">
+                    <div class="method-description">
+                                    <p>Execute an aggregate function on the database.</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$function</td>
+                <td>
+</td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$columns</td>
+                <td>
+</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>mixed</td>
+            <td>
+</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_min">
+        <div class="location">at line 1018</div>
+        <code>                    mixed
+    <strong>min</strong>(string $column)</code>
+    </h3>
+    <div class="details">
+                    <div class="method-description">
+                                    <p>Retrieve the minimum value of a given column.</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$column</td>
+                <td>
+</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>mixed</td>
+            <td>
+</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_max">
+        <div class="location">at line 1029</div>
+        <code>                    mixed
+    <strong>max</strong>(string $column)</code>
+    </h3>
+    <div class="details">
+                    <div class="method-description">
+                                    <p>Retrieve the maximum value of a given column.</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$column</td>
+                <td>
+</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>mixed</td>
+            <td>
+</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_avg">
+        <div class="location">at line 1040</div>
+        <code>                    mixed
+    <strong>avg</strong>(string $column)</code>
+    </h3>
+    <div class="details">
+                    <div class="method-description">
+                                    <p>Retrieve the average of the values of a given column.</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$column</td>
+                <td>
+</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>mixed</td>
+            <td>
+</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_sum">
+        <div class="location">at line 1051</div>
+        <code>                    mixed
+    <strong>sum</strong>(string $column)</code>
+    </h3>
+    <div class="details">
+                    <div class="method-description">
+                                    <p>Retrieve the sum of the values of a given column.</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$column</td>
+                <td>
+</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>mixed</td>
+            <td>
+</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_count">
+        <div class="location">at line 1062</div>
+        <code>                    int
+    <strong>count</strong>(string $columns = &#039;*&#039;)</code>
+    </h3>
+    <div class="details">
+                    <div class="method-description">
+                                    <p>Retrieve the "count" result of the query.</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$columns</td>
+                <td>
+</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>int</td>
+            <td>
+</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_lists">
+        <div class="location">at line 1074</div>
+        <code>                    array
+    <strong>lists</strong>(string $column, string $key = null)</code>
+    </h3>
+    <div class="details">
+                    <div class="method-description">
+                                    <p>Get an array with the values of a given column.</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$column</td>
+                <td>
+</td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$key</td>
+                <td>
+</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>array</td>
+            <td>
+</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_newQuery">
+        <div class="location">at line 1084</div>
+        <code>                    <a href="../../Sofa/Eloquence/Builder.html"><abbr title="Sofa\Eloquence\Builder">Builder</abbr></a>
+    <strong>newQuery</strong>()</code>
+    </h3>
+    <div class="details">
+                    <div class="method-description">
+                                    <p>Get a new instance of the Eloquence query builder.</p>                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../Sofa/Eloquence/Builder.html"><abbr title="Sofa\Eloquence\Builder">Builder</abbr></a></td>
+            <td>
+</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+            </div>
+
+    
+            </div>
+                <div id="footer">
+        Generated by <a href="http://sami.sensiolabs.org/">Sami, the API Documentation Generator</a>.
+    </div>
+
+        </div>
+    </div>
+    </body>
+
+</html>

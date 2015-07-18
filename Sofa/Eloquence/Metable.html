@@ -1,0 +1,818 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="robots" content="index, follow, all" />
+    <title>Sofa\Eloquence\Metable | API</title>
+
+            <link rel="stylesheet" type="text/css" href="../../css/bootstrap.min.css">
+        <link rel="stylesheet" type="text/css" href="../../css/bootstrap-theme.min.css">
+        <link rel="stylesheet" type="text/css" href="../../css/sami.css">
+        <script src="../../js/jquery-1.11.1.min.js"></script>
+        <script src="../../js/bootstrap.min.js"></script>
+        <script src="../../js/typeahead.min.js"></script>
+        <script src="../../sami.js"></script>
+        <meta name="MobileOptimized" content="width">
+        <meta name="HandheldFriendly" content="true">
+        <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1">
+    
+    
+    </head>
+
+    <body id="class" data-name="class:Sofa_Eloquence_Metable" data-root-path="../../">
+            <div id="content">
+        <div id="left-column">
+                <div id="control-panel">
+                <form id="search-form" action="../../search.html" method="GET">
+            <span class="glyphicon glyphicon-search"></span>
+            <input name="search"
+                   class="typeahead form-control"
+                   type="search"
+                   placeholder="Search">
+        </form>
+    </div>
+
+                <div id="api-tree"></div>
+
+        </div>
+        <div id="right-column">
+                <nav id="site-nav" class="navbar navbar-default" role="navigation">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-elements">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="../../index.html">API</a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar-elements">
+                <ul class="nav navbar-nav">
+                    <li><a href="../../classes.html">Classes</a></li>
+                                            <li><a href="../../namespaces.html">Namespaces</a></li>
+                                        <li><a href="../../interfaces.html">Interfaces</a></li>
+                    <li><a href="../../traits.html">Traits</a></li>
+                    <li><a href="../../doc-index.html">Index</a></li>
+                    <li><a href="../../search.html">Search</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+                        <div class="namespace-breadcrumbs">
+            <ol class="breadcrumb">
+                <li><span class="label label-default">trait</span></li>
+                                                            <li><a href="../../Sofa.html">Sofa</a></li>
+                                        <li><a href="../../Sofa/Eloquence.html">Eloquence</a></li>
+    
+                <li>Metable</li>
+            </ol>
+        </div>
+                <div id="page-content">
+                
+    <div class="page-header">
+        <h1>Metable</h1>
+    </div>
+
+    <p>    trait
+    <strong>Metable</strong>
+</p>
+
+    
+    
+    
+            <h2>Properties</h2>
+
+            <table class="table table-condensed">
+                    <tr>
+                <td class="type" id="property_allowedMeta">
+                                                                                array
+                </td>
+                <td>$allowedMeta</td>
+                <td class="last">array$allowedMeta</td>
+                <td></td>
+            </tr>
+            </table>
+
+    
+            <h2>Methods</h2>
+
+            <div class="container-fluid underlined">
+                    <div class="row">
+                <div class="col-md-2 type">
+                    static&nbsp;void
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_bootMetable">bootMetable</a>()
+                                            <p>Register hooks for the trait.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a target="_blank" href="http://php.net/Closure"><abbr title="Closure">Closure</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getAttributeMetable">getAttributeMetable</a>()
+                                            <p>Register hook on getAttribute method.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a target="_blank" href="http://php.net/Closure"><abbr title="Closure">Closure</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_setAttributeMetable">setAttributeMetable</a>()
+                                            <p>Register hook on setAttribute method.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a target="_blank" href="http://php.net/Closure"><abbr title="Closure">Closure</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_toArrayMetable">toArrayMetable</a>()
+                                            <p>Register hook on toArray method.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a target="_blank" href="http://php.net/Closure"><abbr title="Closure">Closure</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_replicateMetable">replicateMetable</a>()
+                                            <p>Register hook on replicate method.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a target="_blank" href="http://php.net/Closure"><abbr title="Closure">Closure</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_saveMetable">saveMetable</a>()
+                                            <p>Register hook on save method.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a target="_blank" href="http://php.net/Closure"><abbr title="Closure">Closure</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method___issetMetable">__issetMetable</a>()
+                                            <p>Register hook on isset call.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a target="_blank" href="http://php.net/Closure"><abbr title="Closure">Closure</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method___unsetMetable">__unsetMetable</a>()
+                                            <p>Register hook on unset call.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a target="_blank" href="http://php.net/Closure"><abbr title="Closure">Closure</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_queryHookMetable">queryHookMetable</a>()
+                                            <p>Register hook on queryHook method.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    boolean
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_allowsMeta">allowsMeta</a>(string $key)
+                                            <p>Determine whether meta attribute is allowed for the model.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    boolean
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_hasMeta">hasMeta</a>(string $key)
+                                            <p>Determine whether meta attribute exists on the model.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    mixed
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getMeta">getMeta</a>(string $key)
+                                            <p>Get meta attribute value.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    void
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_setMeta">setMeta</a>(string $key, mixed $value)
+                                            <p>Set meta attribute.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <abbr title="Illuminate\Database\Eloquent\Relations\MorphMany">MorphMany</abbr>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_metaAttributes">metaAttributes</a>()
+                                            <p>Meta attributes relation.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../Sofa/Eloquence/Metable/AttributeBag.html"><abbr title="Sofa\Eloquence\Metable\AttributeBag">AttributeBag</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getMetaAttributes">getMetaAttributes</a>()
+                                            <p>Get meta attributes as collection.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../Sofa/Eloquence/Metable/AttributeBag.html"><abbr title="Sofa\Eloquence\Metable\AttributeBag">AttributeBag</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getMetaAttributesAttribute">getMetaAttributesAttribute</a>()
+                                            <p>Accessor for metaAttributes property</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    array
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getMetaAttributesArray">getMetaAttributesArray</a>()
+                                            <p>Get meta attributes as associative array.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    array
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getAllowedMeta">getAllowedMeta</a>()
+                                            <p>Get allowed meta attributes array.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+            </div>
+
+
+        <h2>Details</h2>
+
+            <div id="method-details">
+                    <div class="method-item">
+                    <h3 id="method_bootMetable">
+        <div class="location">at line 29</div>
+        <code>        static            void
+    <strong>bootMetable</strong>()</code>
+    </h3>
+    <div class="details">
+                    <div class="method-description">
+                                    <p>Register hooks for the trait.</p>                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>void</td>
+            <td>
+</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getAttributeMetable">
+        <div class="location">at line 52</div>
+        <code>                    <a target="_blank" href="http://php.net/Closure"><abbr title="Closure">Closure</abbr></a>
+    <strong>getAttributeMetable</strong>()</code>
+    </h3>
+    <div class="details">
+                    <div class="method-description">
+                                    <p>Register hook on getAttribute method.</p>                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a target="_blank" href="http://php.net/Closure"><abbr title="Closure">Closure</abbr></a></td>
+            <td>
+</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_setAttributeMetable">
+        <div class="location">at line 72</div>
+        <code>                    <a target="_blank" href="http://php.net/Closure"><abbr title="Closure">Closure</abbr></a>
+    <strong>setAttributeMetable</strong>()</code>
+    </h3>
+    <div class="details">
+                    <div class="method-description">
+                                    <p>Register hook on setAttribute method.</p>                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a target="_blank" href="http://php.net/Closure"><abbr title="Closure">Closure</abbr></a></td>
+            <td>
+</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_toArrayMetable">
+        <div class="location">at line 92</div>
+        <code>                    <a target="_blank" href="http://php.net/Closure"><abbr title="Closure">Closure</abbr></a>
+    <strong>toArrayMetable</strong>()</code>
+    </h3>
+    <div class="details">
+                    <div class="method-description">
+                                    <p>Register hook on toArray method.</p>                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a target="_blank" href="http://php.net/Closure"><abbr title="Closure">Closure</abbr></a></td>
+            <td>
+</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_replicateMetable">
+        <div class="location">at line 110</div>
+        <code>                    <a target="_blank" href="http://php.net/Closure"><abbr title="Closure">Closure</abbr></a>
+    <strong>replicateMetable</strong>()</code>
+    </h3>
+    <div class="details">
+                    <div class="method-description">
+                                    <p>Register hook on replicate method.</p>                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a target="_blank" href="http://php.net/Closure"><abbr title="Closure">Closure</abbr></a></td>
+            <td>
+</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_saveMetable">
+        <div class="location">at line 130</div>
+        <code>                    <a target="_blank" href="http://php.net/Closure"><abbr title="Closure">Closure</abbr></a>
+    <strong>saveMetable</strong>()</code>
+    </h3>
+    <div class="details">
+                    <div class="method-description">
+                                    <p>Register hook on save method.</p>                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a target="_blank" href="http://php.net/Closure"><abbr title="Closure">Closure</abbr></a></td>
+            <td>
+</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method___issetMetable">
+        <div class="location">at line 146</div>
+        <code>                    <a target="_blank" href="http://php.net/Closure"><abbr title="Closure">Closure</abbr></a>
+    <strong>__issetMetable</strong>()</code>
+    </h3>
+    <div class="details">
+                    <div class="method-description">
+                                    <p>Register hook on isset call.</p>                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a target="_blank" href="http://php.net/Closure"><abbr title="Closure">Closure</abbr></a></td>
+            <td>
+</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method___unsetMetable">
+        <div class="location">at line 166</div>
+        <code>                    <a target="_blank" href="http://php.net/Closure"><abbr title="Closure">Closure</abbr></a>
+    <strong>__unsetMetable</strong>()</code>
+    </h3>
+    <div class="details">
+                    <div class="method-description">
+                                    <p>Register hook on unset call.</p>                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a target="_blank" href="http://php.net/Closure"><abbr title="Closure">Closure</abbr></a></td>
+            <td>
+</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_queryHookMetable">
+        <div class="location">at line 186</div>
+        <code>                    <a target="_blank" href="http://php.net/Closure"><abbr title="Closure">Closure</abbr></a>
+    <strong>queryHookMetable</strong>()</code>
+    </h3>
+    <div class="details">
+                    <div class="method-description">
+                                    <p>Register hook on queryHook method.</p>                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a target="_blank" href="http://php.net/Closure"><abbr title="Closure">Closure</abbr></a></td>
+            <td>
+</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_allowsMeta">
+        <div class="location">at line 533</div>
+        <code>                    boolean
+    <strong>allowsMeta</strong>(string $key)</code>
+    </h3>
+    <div class="details">
+                    <div class="method-description">
+                                    <p>Determine whether meta attribute is allowed for the model.</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$key</td>
+                <td>
+</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>boolean</td>
+            <td>
+</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_hasMeta">
+        <div class="location">at line 546</div>
+        <code>                    boolean
+    <strong>hasMeta</strong>(string $key)</code>
+    </h3>
+    <div class="details">
+                    <div class="method-description">
+                                    <p>Determine whether meta attribute exists on the model.</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$key</td>
+                <td>
+</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>boolean</td>
+            <td>
+</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getMeta">
+        <div class="location">at line 557</div>
+        <code>                    mixed
+    <strong>getMeta</strong>(string $key)</code>
+    </h3>
+    <div class="details">
+                    <div class="method-description">
+                                    <p>Get meta attribute value.</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$key</td>
+                <td>
+</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>mixed</td>
+            <td>
+</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_setMeta">
+        <div class="location">at line 569</div>
+        <code>                    void
+    <strong>setMeta</strong>(string $key, mixed $value)</code>
+    </h3>
+    <div class="details">
+                    <div class="method-description">
+                                    <p>Set meta attribute.</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$key</td>
+                <td>
+</td>
+            </tr>
+                    <tr>
+                <td>mixed</td>
+                <td>$value</td>
+                <td>
+</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>void</td>
+            <td>
+</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_metaAttributes">
+        <div class="location">at line 581</div>
+        <code>                    <abbr title="Illuminate\Database\Eloquent\Relations\MorphMany">MorphMany</abbr>
+    <strong>metaAttributes</strong>()</code>
+    </h3>
+    <div class="details">
+                    <div class="method-description">
+                                    <p>Meta attributes relation.</p>                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><abbr title="Illuminate\Database\Eloquent\Relations\MorphMany">MorphMany</abbr></td>
+            <td>
+</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getMetaAttributes">
+        <div class="location">at line 591</div>
+        <code>                    <a href="../../Sofa/Eloquence/Metable/AttributeBag.html"><abbr title="Sofa\Eloquence\Metable\AttributeBag">AttributeBag</abbr></a>
+    <strong>getMetaAttributes</strong>()</code>
+    </h3>
+    <div class="details">
+                    <div class="method-description">
+                                    <p>Get meta attributes as collection.</p>                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../Sofa/Eloquence/Metable/AttributeBag.html"><abbr title="Sofa\Eloquence\Metable\AttributeBag">AttributeBag</abbr></a></td>
+            <td>
+</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getMetaAttributesAttribute">
+        <div class="location">at line 603</div>
+        <code>                    <a href="../../Sofa/Eloquence/Metable/AttributeBag.html"><abbr title="Sofa\Eloquence\Metable\AttributeBag">AttributeBag</abbr></a>
+    <strong>getMetaAttributesAttribute</strong>()</code>
+    </h3>
+    <div class="details">
+                    <div class="method-description">
+                                    <p>Accessor for metaAttributes property</p>                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../Sofa/Eloquence/Metable/AttributeBag.html"><abbr title="Sofa\Eloquence\Metable\AttributeBag">AttributeBag</abbr></a></td>
+            <td>
+</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getMetaAttributesArray">
+        <div class="location">at line 613</div>
+        <code>                    array
+    <strong>getMetaAttributesArray</strong>()</code>
+    </h3>
+    <div class="details">
+                    <div class="method-description">
+                                    <p>Get meta attributes as associative array.</p>                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>array</td>
+            <td>
+</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getAllowedMeta">
+        <div class="location">at line 653</div>
+        <code>                    array
+    <strong>getAllowedMeta</strong>()</code>
+    </h3>
+    <div class="details">
+                    <div class="method-description">
+                                    <p>Get allowed meta attributes array.</p>                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>array</td>
+            <td>
+</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+            </div>
+
+    
+            </div>
+                <div id="footer">
+        Generated by <a href="http://sami.sensiolabs.org/">Sami, the API Documentation Generator</a>.
+    </div>
+
+        </div>
+    </div>
+    </body>
+
+</html>
